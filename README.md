@@ -30,7 +30,7 @@ You can try out the Simple Calculator by cloning this repository and opening the
     ```
 3. **Open the `Simple_Calculator.html` file** in your browser:
     ```bash
-    open index.html
+    open Simple_Calculator.html
     ```
     or simply double-click on the `Simple_Calculator.html` file in your file explorer.
 
