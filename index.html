@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="header">
+        Simple Calculator
+    </div>
+    <div class="container">
+        <div class="input-text">
+            <input type="text" id="input" placeholder="Enter Expression">
+        </div>
+        <div class="result">
+            <p id="res">Result will be displayed here.</p>
+        </div>
+        <div class="btns">
+            <button type="button" onclick="backspace_function()">&#x2190;</button>
+            <button type="button" onclick="press_operator('(')">(</button>
+            <button type="button" onclick="press_operator(')')">)</button>
+            <button type="button" onclick="clear_function()">C</button>
+            <button type="button" onclick="press_number(1)">1</button>
+            <button type="button" onclick="press_number(2)">2</button>
+            <button type="button" onclick="press_number(3)">3</button>
+            <button type="button" onclick="press_operator('+')">+</button>
+            <button type="button" onclick="press_number(4)">4</button>
+            <button type="button" onclick="press_number(5)">5</button>
+            <button type="button" onclick="press_number(6)">6</button>
+            <button type="button" onclick="press_operator('-')">-</button>
+            <button type="button" onclick="press_number(7)">7</button>
+            <button type="button" onclick="press_number(8)">8</button>
+            <button type="button" onclick="press_number(9)">9</button>
+            <button type="button" onclick="press_operator('*')">x</button>
+            <button type="button" onclick="press_number(0)">0</button>
+            <button type="button" onclick="press_operator('.')">.</button>
+            <button type="button" onclick="press_operator('/')">/</button>
+            <button type="button" onclick="evaluate_expression()">=</button>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
