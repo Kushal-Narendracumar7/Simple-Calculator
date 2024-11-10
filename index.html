@@ -3,44 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Simple Calculator</title>
 </head>
 <body>
-    <div class="header">
-        Simple Calculator
-    </div>
-    <div class="container">
+    <header class="header bg-white text-primary py-3 shadow-sm">
+        <h1 style="text-align:center;">Simple Calculator</h1>
+    </header>
+    <main class="container mt-5">
         <div class="input-text">
-            <input type="text" id="input" placeholder="Enter Expression">
+            <input type="text" id="input" class="form-control text-end" placeholder="Enter Expression" autofocus>
         </div>
         <div class="result">
-            <p id="res">Result will be displayed here.</p>
+            <p id="res" class="text-center">Result will be displayed here.</p>
         </div>
-        <div class="btns">
-            <button type="button" onclick="backspace_function()">&#x2190;</button>
-            <button type="button" onclick="press_operator('(')">(</button>
-            <button type="button" onclick="press_operator(')')">)</button>
-            <button type="button" onclick="clear_function()">C</button>
-            <button type="button" onclick="press_number(1)">1</button>
-            <button type="button" onclick="press_number(2)">2</button>
-            <button type="button" onclick="press_number(3)">3</button>
-            <button type="button" onclick="press_operator('+')">+</button>
-            <button type="button" onclick="press_number(4)">4</button>
-            <button type="button" onclick="press_number(5)">5</button>
-            <button type="button" onclick="press_number(6)">6</button>
-            <button type="button" onclick="press_operator('-')">-</button>
-            <button type="button" onclick="press_number(7)">7</button>
-            <button type="button" onclick="press_number(8)">8</button>
-            <button type="button" onclick="press_number(9)">9</button>
-            <button type="button" onclick="press_operator('*')">x</button>
-            <button type="button" onclick="press_number(0)">0</button>
-            <button type="button" onclick="press_operator('.')">.</button>
-            <button type="button" onclick="press_operator('/')">/</button>
-            <button type="button" onclick="evaluate_expression()">=</button>
+        <div class="btns d-grid gap-3 mt-3">
+            <!-- Button grid using Bootstrap rows and columns for easy responsiveness -->
+            <div class="row">
+                <button class="col btn" onclick="backspace_function()">&#x2190;</button>
+                <button class="col btn" onclick="press_operator('(')">(</button>
+                <button class="col btn" onclick="press_operator(')')">)</button>
+                <button class="col btn" onclick="clear_function()">C</button>
+            </div>
+            <div class="row">
+                <button class="col btn" onclick="press_number(1)">1</button>
+                <button class="col btn" onclick="press_number(2)">2</button>
+                <button class="col btn" onclick="press_number(3)">3</button>
+                <button class="col btn" onclick="press_operator('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="col btn" onclick="press_number(4)">4</button>
+                <button class="col btn" onclick="press_number(5)">5</button>
+                <button class="col btn" onclick="press_number(6)">6</button>
+                <button class="col btn" onclick="press_operator('-')">-</button>
+            </div>
+
+            <div class="row">
+                <button class="col btn" onclick="press_number(7)">7</button>
+                <button class="col btn" onclick="press_number(8)">8</button>
+                <button class="col btn" onclick="press_number(9)">9</button>
+                <button class="col btn" onclick="press_operator('*')">x</button>
+            </div>
             
+            <div class="row">
+                <button class="col btn"onclick="press_number(0)">0</button>
+                <button class="col btn"onclick="press_operator('.')">.</button>
+                <button class="col btn"onclick="press_operator('/')">/</button>
+                <button class="col btn"onclick="evaluate_expression()">=</button>
+            </div>
         </div>
-    </div>
+    </main>
+    <footer class="text-center py-3">
+        <div class="social-links">
+            <a href="https://github.com/Kushal-Narendracumar7" target="_blank" class="text-white mx-2">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <p class="text-white">© 2024 Kushal Narendracumar. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
